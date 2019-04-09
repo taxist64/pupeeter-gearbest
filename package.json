@@ -1,0 +1,16 @@
+{
+  "name": "puppeteer-scrapper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "tradeDoubler.js",
+  "scripts": {
+    "start": "node tradeDoubler.js"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "async-csv": "^2.0.0",
+    "fast-csv": "^2.4.1",
+    "puppeteer": "^1.14.0"
+  }
+}
