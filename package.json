@@ -4,13 +4,18 @@
   "description": "",
   "main": "tradeDoubler.js",
   "scripts": {
-    "start": "node tradeDoubler.js"
+    "start": "npm run tradeDoublerWebParser & npm run awin",
+    "tradeDoublerWebParser": "node tradeDoublerWebParser.js",
+    "awinWebParser": "node awinWebParser.js",
+    "awinCSVMerge": "node awinCSVMerge.js"
   },
   "author": "me",
   "license": "ISC",
   "dependencies": {
     "async-csv": "^2.0.0",
+    "axios": "^0.18.0",
     "fast-csv": "^2.4.1",
+    "lodash": "^4.17.11",
     "puppeteer": "^1.14.0"
   }
 }
