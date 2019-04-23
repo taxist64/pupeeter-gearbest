@@ -197,9 +197,12 @@ console.log = function (d) { //
 
                 await waitFor(getRandomInt(4000, 7000));
 
-
-                const dirtyUrl = new URL(parseCompany.URL).origin;
-
+                let dirtyUrl = '';
+                try {
+                    dirtyUrl = new URL(parseCompany.URL).origin;
+                } catch (e) {
+                    dirtyUrl = '';
+                }
 
                 const urlAPI = dirtyUrl.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "").split('/')[0];
                 console.log(new Date().toLocaleString());
